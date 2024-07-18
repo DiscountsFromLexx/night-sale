@@ -28,6 +28,19 @@
         </div>
 
         <div class="cat_img"></div>
+        <script>
+        function redirectToPage() {
+            if (window.matchMedia("(min-width: 1024px) and (max-width: 1600px)").matches) {
+                window.location.href = "https://sites.google.com/view/discounts-from-ali/night-sale";
+            }
+        }
+
+        // Викликати функцію при завантаженні сторінки
+        window.addEventListener('load', redirectToPage);
+
+        // Викликати функцію при зміні розміру вікна
+        window.addEventListener('resize', redirectToPage);
+    </script>
 
 
 </body>
