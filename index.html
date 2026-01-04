@@ -93,179 +93,42 @@
     <body>
         
 
-<style>p { font-size:20px; line-height:10px; margin-top:30px;page-break-before:;}</style>
-<style>.product-block { margin-bottom: 0.1; border: 0.1;  #D3D3D3; border-radius: 1px; padding: 5px; }</style>
-<p style="line-height: 1.5;text-align: left; font-family: Helvetica; font-size: 120%; color: #000000; font-weight: bold; margin-top: 20px;"><br>Тест
- <br>(04.04.2025, 15:42)<br></p>
-<p style="line-height: 1.5;text-align: left; font-family: Helvetica; font-size: 14px; color: #000000; font-weight: lighter; margin-top: 5px; max-width: 490px;"><b>🐣 МИТТЄВІ ПОКУПКИ</b><br>‼️Розділ в якому обмежена кількість<br>товару за заниженими цінами.<br>При зменшенні кількості ціна зростає.<br>ⓘ Ціни без урахування знижки за монети та купони<br></p>
-<p style="line-height: 1.5;text-align: left; font-family: Helvetica; font-size: 14px; color: #000000; font-weight: lighter; margin-top: 5px; max-width: 490px;">⚠️ Важливо - якщо не встигли,<br>обов-язково додавайте товар до кошика 🛒 ,<br>через деякий час знову буде за тою ж ціною!<br><b>🐾 Для переходу до товару натисніть на фото</b></p>
 <style>
-                                                                                                        .container {
-                                                                                                            display: flex;
-                                                                                                            flex-wrap: wrap;
-                                                                                                            gap: 10px; /* Відстань між товарами */
-                                                                                                        }
-                                                                                                        
-                                                                                                        .product-item {
-                                                                                                            width: calc(50% - 10px); /* 50% ширини мінус відступ */
-                                                                                                            box-sizing: border-box;
-                                                                                                            border: 1px solid #ddd;
-                                                                                                            padding: 10px;
-                                                                                                            text-align: left;
-                                                                                                            border-radius: 8px;
-                                                                                                            background: #f9f9f9;
-                                                                                                        }
-                                                                                                        .product-item p.text {
-                                                                                                            margin-top: 2px;
-                                                                                                            line-height: 2px;  /* Інтервал між рядками для заголовка */
-                                                                                                            font-size: 15px;
-                                                                                                            text-align: left;                                                   
-                                                                                                        }
-                                                                            .product-item img {
-                                                                                display: block; /* Дозволяє margin: auto працювати */
-                                                                                margin: auto; 
-                                                                                align-items: center; /* Центрує по вертикалі */
-                                                                                justify-content: center;
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 8px;                                                   
-                                                                            }
-                                                                            .product-item p.title {
-                                                                                margin-top: 10px;
-                                                                                line-height: 20px;  /* Інтервал між рядками для заголовка */
-                                                                                font-size: 14px;
-                                                                                font-weight: bold;
-                                                                                text-align: left;
-                                                                                max-width: 100%;
-                                                                                white-space: nowrap;
-                                                                                overflow: hidden;
-                                                                            }
-                                                                            .product-item p.link {  
-                                                                                margin-top: -3px;
-                                                                                height: 20px;                                                  
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background: #f8f8f8; }
+        .logo { font-size: 48px; color: #ff6600; margin-bottom: 20px; }
+        .text { font-size: 24px; color: #333; }
+        .channels { font-size: 16px; margin-top: 50px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+        .channels a { color: #ff6600; text-decoration: none; }
+        .channels a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="logo">LexxExpress.click</div>
+    <div class="text">Відкриваємо найкращу пропозицію в AliExpress...<br>Зачекайте 3 секунди або клікніть кнопку нижче</div>
+    <a href="{{longUrl}}" style="display: inline-block; margin-top: 30px; padding: 15px 30px; background: #ff6600; color: white; text-decoration: none; border-radius: 8px; font-size: 20px;">Відкрити в додатку</a>
 
-                                                                                line-height: 2px;  /* Інтервал між рядками для заголовка */
-                                                                                font-size: 10px;
-                                                                                font-weight: bold;
-                                                                                text-align: left;
-                                                                            }
-                                                                            .product-item p.link a {
-                                                                                display: flex;
-                                                                                align-items: center; /* Центрує по вертикалі */
-                                                                                justify-content: center; /* Центрує по горизонталі */
-                                                                                padding: 5px 10px;
-                                                                                background-color: #fff; /* Колір кнопки */
-                                                                                color: #007bff; /* Синій текст */
-                                                                                font-size: 15px;
-                                                                                font-weight: bold;
-                                                                                height: 12px; /* Висота кнопки */
-                                                                                width: 90%; /* Ширина кнопки */
-
-                                                                                text-align: center;
-                                                                                text-decoration: none;
-                                                                                border: 1px solid #007bff;
-                                                                                border-radius: 5px; /* Закруглені кути */
-                                                                                transition: background-color 0.3s ease;
-                                                                            }
-
-                                                                            .product-item p.link a:hover {
-                                                                                background-color: #0056b3; /* Темніший відтінок при наведенні */
-                                                                            }
-                                                                            .link strong {
-                                                                                display: flex;
-                                                                                align-items: center; /* Центрує по вертикалі */
-                                                                                justify-content: center; /* Центрує по горизонталі */
-                                                                                background-color: #fff; /* Колір кнопки (синій) */
-                                                                                color: #007bff; /* Синій текст */
-                                                                                height: 12px; /* Висота кнопки */
-                                                                                width: 90%; /* Ширина кнопки */
-                                                                                padding: 5px 10px; /* Відступи всередині кнопки */
-                                                                                border-radius: 5px; /* Закруглені кути */
-                                                                                cursor: pointer; /* Курсор у вигляді руки */
-                                                                                text-align: center;
-                                                                                font-weight: bold;
-                                                                                font-size: 15px;
-                                                                                border: 1px solid #007bff;
-                                                                                text-decoration: none; /* Забирає підкреслення */
-                                                                            }
-
-                                                                            .link strong:active {
-                                                                                background-color: #0056b3; /* Темніший відтінок при натисканні */
-                                                                            }
-                                                                            .product-item p.solded {
-                                                                                display: block;
-                                                                                margin-top: -15px;
-                                                                                margin-left: 1px;
-                                                                                line-height: 1px;
-                                                                                font-size: 16px;
-                                                                                font-weight: 200;
-                                                                                text-align: left;
-                                                                                display: inline-block; /* Щоб фон підлаштовувався під текст */
-                                                                                background: #FFFFE0; /* Світло-рожевий колір із прозорістю */
-                                                                                padding: 8px 6px; /* Відступи навколо ціни */
-                                                                                border-radius: 5px; /* Закруглені кути */
-                                                                                color: #800000; /* Темно-червоний текст */
-                                                                            }
-                                                                        </style>
-<script>
-                                                                                                // Функція для копіювання в буфер обміну
-                                                                                                function copyToClipboard(text) {{
-                                                                                            navigator.clipboard.writeText(text).then(function() {{
-                                                                                                        var message = document.getElementById("copyMessage");
-                                                                                                        message.innerHTML = 'Код скопійовано: ' + text;
-                                                                                                    message.style.display = 'block';  // Показати повідомлення
-                                                                                                        setTimeout(function() {{
-                                                                                                    message.style.display = 'none';  // Сховати повідомлення через 3 секунди
-                                                                                                        }}, 3000);
-                                                                                                    }}, function(err) {{
-                                                                                                        console.error('Помилка копіювання', err);
-                                                                                                    }});
-                                                                                                }}
-
-                                                                                                // Функція для відкриття посилання в новому вікні при подвійному натисканні
-                                                                                                function openInNewWindow(url) {{
-                                                                                                    window.open(url, '_blank');  // Відкриває посилання в новій вкладці
-                                                                                                }}
-                                                                                            </script>
-<div class="container">
-                                                                    
-                                                                                <div class="product-item">
-                                                                                    <a href="https://s.click.aliexpress.com/e/_oFcgOEp" target="_blank">
-                                                                                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S988f3c903f374e16bbafe212c6a3e557y.jpg_350x350.jpg" alt="Product Photo">
-                                                                                    </a>
-                                                                                    <p class="title">Couple Activity Date Night</p>
-
-                                                                                    
-
-                                                                                    <p class="text" style="margin-left: 5px; font-size: 20px;">
-                                                                                        <b>
-                                                                                            41.78
-                                                                                        </b><b style="margin-left: -5px; color: #6A5ACD; font-size: 14px; vertical-align: 8px;">-86%</b> 
-                                                                                    </p>
-                                                                                    
-                                                                                    <p class="solded">
-                                                                                        <s>312.67</s>
-                                                                                    </p>  
-                                                                                        
-                                                                                    <p class="text" style="font-weight: bold; font-size: 14px; color: #800000;">🐣 РАННЯ УГОДА</p>                                            
-                                                                                    
-                                                                                </div>
-                                                                                <!-- Повідомлення, яке буде з'являтись і зникати -->
-                                                                                 <div id="copyMessage" style="display: none; position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; border-radius: 5px;">
-                                                                                    Посилання скопійовано
-                                                                                 </div>
-                                                                
-                                                                            </div>
-<br>
-<br>
-<a href="https://sites.google.com/view/discounts-from-ali" class="button" style="border: 2px solid #B22222; font-family: Helvetica, sans-serif; margin-top: 100px; font-size: 14px; font-weight: bold; padding: 10px; background-color: white; color: #800000; border-radius: 10px;cursor: pointer; width: 150px; height: 30px; text-decoration: none;  ">КОРИСНА ІНФОРМАЦІЯ</a>
-<p style="line-height: 18px; font-size: 14px; font-family: Helvetica, sans-serif; margin-top: 30px; font-weight: lighter;max-width: 330px;"><strong>🤖 Бот для перевірки цін та пошуку додаткових знижок на АліЕкспрес за Вашим посиланням:<br><a href="https://t.me/pedro_alihelper_bot" target="_blank"><button type="button" style="font-size: 14px; color: #FFFFFF; font-family: Helvetica, sans-serif; padding: 3px 8px; background-color: #008CBA; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 5px;">Розпочати</button></a></strong></p>
-<p style="line-height: 1px; font-size: 16px; font-family: Helvetica, sans-serif; margin-top: 30px;"><strong>Наші телеграм канали:</strong></p>
-<p style="line-height: 18px; font-size: 14px; font-family: Helvetica, sans-serif; margin-top: 10px; font-weight: lighter;max-width: 330px;"><strong><strong>🌶 𝐀ʟì↻ᴀᴛട 🐾</strong> - канал де публікуються товари за ціною більше 100 грн.<br><a href="https://t.me/+t_jY_lfcFnI1ZWMy" target="_blank"><button type="button" style="font-size: 14px; color: #FFFFFF; font-family: Helvetica, sans-serif; padding: 3px 8px; background-color: #008CBA; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 5px;">Приєднатися</button></a></strong></p>
-<p style="line-height: 18px; font-size: 14px; font-family: Helvetica, sans-serif; margin-top: 30px; font-weight: lighter;max-width: 330px;"><strong><strong>💸 Аліекспрес - ШАРА НА ШАРУ!</strong> - канал де публікуються товари за ціною дешевше 100 грн.<br><a href="https://t.me/+l2uwbaDmrlQ0NWFi" target="_blank"><button type="button" style="font-size: 14px; color: #FFFFFF; font-family: Helvetica, sans-serif; padding: 3px 8px; background-color: #008CBA; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 5px;">Приєднатися</button></a></strong></p>
-<p style="line-height: 18px; font-size: 14px; font-family: Helvetica, sans-serif; margin-top: 30px; font-weight: lighter;max-width: 330px;"><strong><strong>🔥Сховище промокодів з AliExpress - купуйте ще дешевше, використовуючи знайдені нами для вас промокоди<br><a href="https://t.me/+6C9t5pyItWkzOWQy" target="_blank"><button type="button" style="font-size: 14px; color: #FFFFFF; font-family: Helvetica, sans-serif; padding: 3px 8px; background-color: #008CBA; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 5px;">Приєднатися</button></a></strong></strong></p>
-<p style="line-height: 18px; font-size: 14px; font-family: Helvetica, sans-serif; margin-top: 10px; font-weight: lighter; max-width: 330px;"><strong><strong>ⓘ кількість товару обмежена<br></strong></strong></p>
-        
+    <div class="channels">
+        🌶 𝐀ʟì↻ᴀᴛട 🐾 - канал де публікуються товари за ціною більше 100 грн.<br>
+        <a href="https://t.me/lexxexpresscats">https://t.me/lexxexpresscats</a><br><br>
+        💸 ШАРА НА ШАРУ! - канал де публікуються товари за ціною дешевше 100 грн.:<br>
+        <a href="https://t.me/aliexpressshara">https://t.me/aliexpressshara</a><br><br>
+        🔐 ЗАКРИТИЙ ТЕЛЕГРАМ КАНАЛ ПРОМОКОДІВ:<br>
+        <a href="https://t.me/+6C9t5pyItWkzOWQy">https://t.me/+6C9t5pyItWkzOWQy</a><br><br>
+        🔍 Знахідки - тут публікуються знахідки від підписників:<br>
+        <a href="https://t.me/+Nmsg2YySEj8zYTVi">https://t.me/+Nmsg2YySEj8zYTVi</a><br><br>
+        😸🐶 КОТОПЕС - дуже смішні відео з життя котів та не тільки!<br>
+        <a href="https://t.me/catslifeses">https://t.me/catslifeses</a><br><br>
+        🤖 Монетний бот<br>
+        <a href="https://t.me/ali_coins_official_bot">https://t.me/ali_coins_official_bot</a><br><br>
+        🎥 YouTube:<br>
+        <a href="http://www.youtube.com/@lexxexpressshara">http://www.youtube.com/@lexxexpressshara</a><br><br>
+        🎵 TikTok:<br>
+        <a href="https://www.tiktok.com/@expresscats">https://www.tiktok.com/@expresscats</a><br><br>
+        📱 Instagram<br>
+        <a href="https://www.instagram.com/spilnota_cats">https://www.instagram.com/spilnota_cats</a><br><br>
+        📱 Twitter:<br>
+        <a href="https://x.com/spilynota">https://x.com/spilynota</a>
+    </div>
         
     </body>
     
